@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    show-sql: true
+    ddl-auto: create
+    
+tenants:
+  datasources:
+    emp:
+      jdbcUrl: jdbc:oracle:thin:@localhost:1521:xe
+      driverClassName: oracle.jdbc.driver.OracleDriver
+      username: Prathi2
+      password: Prathi123
+      
+    emp1:
+      jdbcUrl: jdbc:mysql://localhost:3306/demo
+      driverClassName: com.mysql.jdbc.Driver
+      username: root
+      password: root
+   
+    emp2:
+      jdbcUrl: jdbc:mysql://localhost:3306/nicemp
+      driverClassName: com.mysql.jdbc.Driver
+      username: root
+      password: root
+
+    emp3:
+      jdbcUrl: jdbc:mysql://localhost:3306/inlaw
+      driverClassName: com.mysql.jdbc.Driver
+      username: root
+      password: root
