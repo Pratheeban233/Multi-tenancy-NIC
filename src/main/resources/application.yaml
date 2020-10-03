@@ -29,3 +29,5 @@ tenants:
       driverClassName: com.mysql.jdbc.Driver
       username: root
       password: root
+      
+    ###Mulitenancy##############
