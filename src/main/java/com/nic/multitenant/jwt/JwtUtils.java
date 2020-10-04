@@ -1,9 +1,7 @@
 package com.nic.multitenant.jwt;
 
 import java.util.Date;
-import java.util.Map;
 
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +34,6 @@ public class JwtUtils {
 	@Autowired
 	Tenant tenant;
 	
-	private static final long serialVersionUID = -2550185165626007488L;
 	
 	public static final long JWT_TOKEN_VALIDITY = 5*60*60;
 	

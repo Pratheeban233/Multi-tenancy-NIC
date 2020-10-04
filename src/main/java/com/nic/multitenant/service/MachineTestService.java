@@ -40,7 +40,7 @@ public class MachineTestService {
 			return res.getCredentialsExist();
 
 		}
-		return "Token:" + generateToken;
+		return "Token::: " + generateToken;
 	}
 
 	

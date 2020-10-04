@@ -40,11 +40,8 @@ import com.nic.multitenant.tenantconfig.ThreadTenantStorage;
 
 
 @Component
-public class MachineTestImpl implements MachineTestRepo, Serializable {
+public class MachineTestImpl implements MachineTestRepo {
 
-	
-	 private static final long serialVersionUID = 4678852901357132238L; 
-	
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
@@ -108,7 +105,7 @@ public class MachineTestImpl implements MachineTestRepo, Serializable {
 		 logindata.setEmail(tokenemail);
 		 logindata.setPass(tokenpass);
 		 
-		 String generateNewTokenForValidation = jwtutil.generateToken(logindata);
+	//	 String generateNewTokenForValidation = jwtutil.generateToken(logindata);
 		 
 		// if(token.equals(generateNewTokenForValidation))
 		 

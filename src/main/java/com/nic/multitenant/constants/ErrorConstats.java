@@ -1,6 +1,5 @@
 package com.nic.multitenant.constants;
 
-import org.springframework.dao.EmptyResultDataAccessException;
 
 public interface ErrorConstats {
 	
@@ -17,6 +16,6 @@ public interface ErrorConstats {
 	public final String JWT_TOKEN_EXPIRED_ERROR = "INVALID TOKEN : TOKEN EXPIRED";
 	public final String JWT_TOKEN_MALFORMED_ERROR = "INVALID TOKEN : TOKEN FORMATION ERROR";
 	public final String JWT_TOKEN_UNSUPPORTED_ERROR = "INVALID TOKEN : UNSUPPORTED TOKEN";
-	public final String JWT_TOKEN_ILLEGALARGS_ERROR = "INVALID TOKEN : ILLEGAL ARGUMENTS";
+	public final String JWT_TOKEN_ILLEGALARGS_ERROR = "TOKEN REQUIRED / ILLEGAL ARGUMENTS IN HEADER";
 
 }
