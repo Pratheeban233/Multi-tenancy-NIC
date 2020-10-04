@@ -2,7 +2,6 @@ package com.nic.multitenant.datasourceconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
-import org.springframework.stereotype.Component;
 
 import com.nic.multitenant.model.Tenant;
 import com.nic.multitenant.tenantconfig.ThreadTenantStorage;

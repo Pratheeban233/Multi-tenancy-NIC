@@ -1,11 +1,6 @@
 package com.nic.multitenant.controllers;
 
 import java.io.FileNotFoundException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -64,7 +59,7 @@ public class MachineTestController {
 
 	@ResponseBody
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String welcomeGreeting() throws SQLException, FileNotFoundException
+	public String welcomeGreeting() 
 
 	{
 

@@ -7,7 +7,6 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.context.request.WebRequestInterceptor;
 
 import com.nic.multitenant.constants.Constant;
-import com.nic.multitenant.model.Login;
 import com.nic.multitenant.model.Tenant;
 
 @Component
