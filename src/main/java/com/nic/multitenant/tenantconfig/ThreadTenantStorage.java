@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ThreadTenantStorage {
 	
-	private static ThreadLocal<String> currentTenant = new ThreadLocal<>();
+	private static final ThreadLocal<String> currentTenant = new ThreadLocal<>();
 	
 	
 	  public static void setTenantId(String tenantId) {

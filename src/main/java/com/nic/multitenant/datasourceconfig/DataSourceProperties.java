@@ -31,9 +31,6 @@ public class DataSourceProperties {
 	public void setDatasources(Map<String, Map<String, String>> datasources) {
 	    datasources
 	        .forEach((key, value) -> this.datasources.put(key, convert(value)));
-	    
-	    System.out.println("datasources : "+datasources.toString());
-	    
 	  }
 
 	  public DataSource convert(Map<String, String> source) {

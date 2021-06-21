@@ -9,12 +9,12 @@ public class WebConfiguration implements WebMvcConfigurer {
 
 	private final HeaderTenantInterceptor headerTenantInterceptor;
 
-	  public WebConfiguration(HeaderTenantInterceptor headerTenantInterceptor) {
-	    this.headerTenantInterceptor = headerTenantInterceptor;
-	  }
+	public WebConfiguration(HeaderTenantInterceptor headerTenantInterceptor) {
+		this.headerTenantInterceptor = headerTenantInterceptor;
+	}
 
-	  @Override
-	  public void addInterceptors(InterceptorRegistry registry) {
-	    registry.addWebRequestInterceptor(headerTenantInterceptor);
-	  }
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addWebRequestInterceptor(headerTenantInterceptor);
+	}
 }

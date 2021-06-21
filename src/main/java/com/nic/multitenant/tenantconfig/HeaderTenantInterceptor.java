@@ -15,8 +15,6 @@ public class HeaderTenantInterceptor implements WebRequestInterceptor {
 	@Autowired
 	Tenant tenant;
 	
-//	  public static final String TENANT_HEADER = "X-tenant";
-
 	  @Override
 	  public void preHandle(WebRequest request) throws Exception {
 		  
